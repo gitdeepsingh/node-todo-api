@@ -26,7 +26,7 @@ app.post('/todos', (req, res) => {
     res.send(doc);
   }, (err) => {
     res.status(400).send(err);
-  })
+  });
 });
 
 app.listen(3000, () => {
